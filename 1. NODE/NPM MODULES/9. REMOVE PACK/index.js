@@ -1,0 +1,1 @@
+console.log('o comando: "npm uninstall <nome>" desinstala um pacote do projeto')
