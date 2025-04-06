@@ -4,22 +4,18 @@ const path = require('path')
 const app = express()
 const basePath = path.join(__dirname, 'templates')
 
-const checkAuth = (req, res, next) => {
-
-    req.authStatus = true
-
-    if(req.authStatus){
-        console.log('Esta logado, pode continuar!')
-        next()
-    } else{
-        console.log('Não está logado, faça o login para continuar!')
-        next()
-    }
-}
-
-app.use(checkAuth)
-
 const port = 3000 
+
+app.get('/users/:id',(req, res) => {
+
+    const id = req.params.id
+
+    console.log(`Estamos buscando pelo usuario: ${id}`)
+
+    res.sendFile(`${basePath}/users.html`, (err) => {
+        console.log(err)
+    })
+})
 
 app.get('/',(req, res) => {
 
