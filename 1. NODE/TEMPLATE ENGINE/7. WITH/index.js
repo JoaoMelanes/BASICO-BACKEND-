@@ -2,8 +2,21 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const app = express()
 
+
+
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
+
+app.get('/post', (req, res) => {
+    const post = {
+        title: 'Aprender nodeJS',
+        category: 'Java Script',
+        body: 'Este artigo vai te ajudar a aprender nodeJS....',
+        comments: 4
+    }
+
+    res.render('blogpost', {post})
+})
 
 app.get('/dashboard', (req, res) => {
 
