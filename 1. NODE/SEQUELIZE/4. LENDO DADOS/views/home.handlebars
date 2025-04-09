@@ -1,0 +1,9 @@
+<h1>Usuarios cadastrados:</h1>
+
+<div class="container">
+    {{#each users}}
+    <div class="itens">
+        <p>#{{this.id}} - {{this.name}}</p>
+    </div>
+    {{/each}}
+</div>

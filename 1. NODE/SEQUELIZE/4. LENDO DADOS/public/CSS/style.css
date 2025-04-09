@@ -1,0 +1,101 @@
+*{
+    font-family: helvetica;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.form-checkbox{
+    flex-direction: row;
+}
+
+.form-checkbox input{
+    margin-right: 10px;
+}
+
+.form-control input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+.btn , .btn-create{
+    color: red;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .6s;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-create{
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.btn:hover, .btn-create:hover{
+    background-color: red;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#link{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 2em;
+}
+
+.container .itens{
+    font-weight: bold;
+    width: 235px;
+    margin: 10px;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+}
+
+.container{ 
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
