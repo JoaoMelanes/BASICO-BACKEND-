@@ -7,6 +7,9 @@
         <p>{{this.occupation}}</p>
         <div class="action">
             <a href="/users/{{this.id}}">Ver detalhes</a>
+            <form action="/users/delete/{{this.id}}" method="post">
+                <input type="submit" value="Remover" id="remove">
+            </form>
         </div>
     </div>
     {{/each}}
