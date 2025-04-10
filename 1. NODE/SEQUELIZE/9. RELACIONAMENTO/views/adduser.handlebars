@@ -1,0 +1,17 @@
+<h1>Crie um usuario:</h1>
+
+<form action="/users/create" method="post" class="form">
+    <div class="form-control">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Digite o nome do usuario">
+    </div>
+    <div class="form-control">
+        <label for="occupation">Trabalho:</label>
+        <input type="text" name="occupation" placeholder="Digite com oque você trabalha">
+    </div>
+    <div class="form-control form-checkbox">
+        <input type="checkbox" name="newsletter" checked>
+        <label for="newsletter">Enviar promoções?</label>  
+    </div>
+    <input type="submit" value="cadastrar" class="btn-create">
+</form>
