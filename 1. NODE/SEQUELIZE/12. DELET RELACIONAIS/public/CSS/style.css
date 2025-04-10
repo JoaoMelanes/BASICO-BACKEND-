@@ -133,3 +133,30 @@ header ul li {
     font-size: 18px;
     cursor: pointer;
 }
+
+
+.address-list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.address-list p {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.address-list form{
+    margin: 0px 0px 0px 10px;
+    width:auto;
+}
+
+.address-list input{
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
