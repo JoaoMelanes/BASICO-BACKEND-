@@ -43,7 +43,6 @@ module.exports = class TaskController {
         const task = {
             title: req.body.title,
             description: req.body.title,
-            done: false
         }
 
         await Task.update(task, {where: {id: id}})
