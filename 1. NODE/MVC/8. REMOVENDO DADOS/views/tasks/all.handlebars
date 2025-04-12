@@ -5,8 +5,8 @@
     <li>
         <a href="/" class="title">{{this.title}}</a>
         <div class="action">
-            <a href="/"><i class="bi bi-check2"></i></a>
-            <a href="/"><i class="bi bi-pencil-square"></i></a>
+            <button><i class="bi bi-check2"></i></button>
+            <button><i class="bi bi-pencil-square"></i></button>
             <form action="/tasks/remove" method="post">
                 <input type="hidden" name="id" value="{{this.id}}">
                 <button type="submit">

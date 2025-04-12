@@ -130,9 +130,11 @@ button{
     margin-right: .6em;
     color: white;
     background-color: red;
+    border: none;
     border-radius: 10px;    
     padding: 5px;
     margin-bottom: 2px;
+    cursor: pointer;
 }
 
 button:hover{
