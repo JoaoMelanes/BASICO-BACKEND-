@@ -1,0 +1,141 @@
+*{
+    font-family: helvetica;
+    margin: 0;
+}
+
+h1, .p{
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    margin-right: 10px;
+    color: white;
+    padding: 10px;
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px #ccc;
+    cursor: pointer;
+}
+
+.p{margin: 5px;}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    margin: 5px 10px;
+}
+
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.form-control input, textarea{
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+.btn , .btn-create{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 10px;
+    transition: .6s;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px;
+}
+
+.btn-create{
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.btn:hover, .btn-create:hover{
+    background-color: red;
+    width: 100%;
+    padding: 12px;
+    box-shadow: 3px 3px 2px #ccc;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+header{
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 3px 3px 0px #ccc;
+    display: flex;
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.task-list{
+    list-style: none;
+    margin-top: 1em;
+}
+
+.task-list li {
+    padding: .5em;
+    margin-bottom: 1em;
+    border-bottom:  1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list .title{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.action{
+    display: flex;
+}
+
+.action i{ 
+    font-size: 1.5em;
+    margin-right: .6em;
+    color: white;
+    background-color: red;
+    border-radius: 10px;    
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.action i:hover{
+    padding: 7px;
+    box-shadow: 3px 3px 3px 0px #ccc;
+}
