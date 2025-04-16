@@ -33,12 +33,6 @@ class Product {
 
         return product
     }
-    
-    static async removeProductById(id){
-        const product = await conn.db().collection('products').deleteOne({_id: new ObjectId(id)})
-
-        return product
-    }
 
 }
 
