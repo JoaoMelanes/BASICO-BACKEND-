@@ -40,6 +40,13 @@ class Product {
         return product
     }
 
+    static async updateProductById(id){
+
+        const product = await conn.db().collection('products').updateOne({_id: new ObjectId(id)})
+
+        return product
+    }
+
 }
 
 module.exports = Product
