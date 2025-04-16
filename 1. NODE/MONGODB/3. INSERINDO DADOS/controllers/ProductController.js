@@ -10,15 +10,14 @@ module.exports = class ProductController{
     }
 
     static async submitProduct(req, res){
-        const product = {
-            name: req.body.name,
-            price: req.body.price,
-            description: req.body.description
-        }
         
-        const products = new Product(product)
+        const name = req.body.name
+        const price = req.body.price
+        const description = req.body.description
+    
+        const product = new Product(name, price, description)
 
-        products.save()
+        product.save()
 
         res.redirect('/products')
     }
