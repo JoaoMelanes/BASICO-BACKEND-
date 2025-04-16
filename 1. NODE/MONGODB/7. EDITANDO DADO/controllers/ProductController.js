@@ -1,3 +1,4 @@
+const { deserialize } = require('mongodb')
 const Product = require('../models/Product')
 
 module.exports = class ProductController{
@@ -52,8 +53,14 @@ module.exports = class ProductController{
     static async updateProduct(req, res){
 
         const id = req.body.id
+        const dados = {
+            image: req.body.image,
+            name: req.body.name,
+            price: req.body.price,
+            description: req.body.description
+        }
 
-        const product = await Product.updateProductById(id)
+        await Product.updateProductById(id,dados)
 
         res.redirect('/products')
     }

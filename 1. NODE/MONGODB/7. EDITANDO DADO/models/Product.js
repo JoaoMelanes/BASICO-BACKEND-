@@ -40,9 +40,9 @@ class Product {
         return product
     }
 
-    static async updateProductById(id){
+    static async updateProductById(id, dados){
 
-        const product = await conn.db().collection('products').updateOne({_id: new ObjectId(id)})
+        const product = await conn.db().collection('products').updateOne({_id: new ObjectId(id)}, {$set: dados })
 
         return product
     }
