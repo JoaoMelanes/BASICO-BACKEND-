@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+
+header{
+    padding: 1em;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px 0px 30px 30px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li{
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+header nav ul li:hover{
+    padding: 12px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+}
+
