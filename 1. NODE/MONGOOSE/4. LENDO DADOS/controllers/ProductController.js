@@ -2,11 +2,11 @@ const { deserialize } = require('mongodb')
 const Product = require('../models/Product')
 
 module.exports = class ProductController{
-    // static async showProducts(req, res){
-    //     const products = await Product.getProducts()
+    static async showProducts(req, res){
+        const products = await Product.find().lean()
 
-    //     res.render('products/all', {products})
-    // }
+        res.render('products/all', {products})
+    }
 
     static createProduct(req, res){
         res.render('products/create')
