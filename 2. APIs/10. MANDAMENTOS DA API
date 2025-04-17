@@ -1,0 +1,47 @@
+1. Interface uniforme
+{
+    Todas as solicitações de API pelo mesmo recurso devem ter a mesma aparência, independentemente da origem.
+ A API REST deve garantir que o mesmo dado, como o nome ou endereço de e-mail de um usuário,
+  pertença a somente um identificador de recurso uniforme (URI)
+. Os recursos não devem ser muito grandes, mas devem conter todas as informações de que o cliente possa precisar.
+}
+
+2. Desacoplamento cliente-servidor
+{
+    No design da API REST, as aplicações do cliente e do servidor devem ser completamente independentes uma da outra.
+ A única informação que a aplicação do cliente deve conhecer é o URI do recurso solicitado;
+  ela não pode interagir com a aplicação do servidor de nenhuma outra forma. Da mesma forma,
+ uma aplicação do servidor não deve modificar a aplicação do cliente além de passar os dados solicitados via HTTP.
+ }
+
+3. APIs sem estado
+{
+    As APIs REST são sem estado, ou seja,
+     cada solicitação precisa incluir todas as informações necessárias para seu processamento. 
+     Em outras palavras, as APIs REST não requerem quaisquer sessões do lado do servidor. 
+    Aplicações do servidor não estão autorizadas a armazenar quaisquer dados relacionados a uma solicitação do cliente.
+}
+
+4. Cacheabilidade
+{
+    Quando possível, os recursos devem ser armazenados em cache no lado do cliente ou do servidor.
+     As respostas do servidor também precisam conter informações sobre se o cache é permitido para o recurso entregue.
+      O objetivo é melhorar o desempenho no lado do cliente e, ao mesmo tempo,
+     aumentar a escalabilidade no lado do servidor.
+}
+
+5. Arquitetura de sistema em camadas
+{
+    Nas APIs REST, as chamadas e respostas passam por diferentes camadas.
+     Como regra geral, não assuma que as aplicações do cliente e do servidor se conectam diretamente uma à outra.
+      Pode haver vários intermediários diferentes no loop de comunicação. 
+      As APIs REST precisam ser projetadas de modo que nem o cliente,
+     nem o servidor possam dizer se estão se comunicando com a aplicação final ou um intermediário.
+}
+
+6. Código sob demanda (opcional)
+{
+    As APIs REST geralmente enviam recursos estáticos, mas, em certos casos,
+     as respostas também podem conter código executável (como miniaplicativos Java).
+     Nesses casos, o código só deve ser executado sob demanda.
+}
