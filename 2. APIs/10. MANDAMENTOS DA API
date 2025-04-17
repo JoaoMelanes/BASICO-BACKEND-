@@ -46,10 +46,12 @@
      Nesses casos, o código só deve ser executado sob demanda.
 }
 
-VERBOS HTTP
+        VERBOS HTTP
 
 GET = RECEBE DADOS
 POST = ENVIA DADOS
 PUT = ATUALIZA TODOS OS DADOS DE UMA VEZ
 DELETE = DELETA DADOS
 PATCH = ATUALIZA UM DADO POR VEZ
+
+
